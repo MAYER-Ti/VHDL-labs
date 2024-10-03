@@ -24,16 +24,9 @@ HIF003
 --
 FILES
 {
-	dvuhtakt912.gdf
+	r2_t2_shift_r_vhdl.vhd
 	{
-		dvuhtakt912 [] []
-		{
-			1 [] [];
-		}
-	}
-	dvuhrazrsddrtigdvuhtak913.gdf
-	{
-		dvuhrazrsddrtigdvuhtak913 [] []
+		r2_t2_shift_r_vhdl [] [U1147235.DLS,U7449008.DLS]
 		{
 			0 [] [];
 		}
@@ -41,9 +34,5 @@ FILES
 }
 TREE
 {
-	dvuhrazrsddrtigdvuhtak913::(0,0):(0): dvuhrazrsddrtigdvuhtak913.gdf
-	{
-		dvuhtakt912::(0,0):(6): dvuhtakt912.gdf;
-		dvuhtakt912::(0,0):(5): dvuhtakt912.gdf;
-	}
+	r2_t2_shift_r_vhdl::(0,0):(0): r2_t2_shift_r_vhdl.vhd;
 }

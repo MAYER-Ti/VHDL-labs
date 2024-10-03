@@ -1,8 +1,8 @@
-Project Information            z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Project Information       z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/17/20 22:23:22
+Compiled: 10/18/20 01:27:56
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -44,17 +44,17 @@ User Pins:                 3        2        0
 
 
 
-Project Information            z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Project Information       z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 
 ** AUTO GLOBAL SIGNALS **
 
 
 
 INFO: Signal 'c' chosen for auto global Clock
-INFO: Signal 'r' chosen for auto global Clear
+INFO: Signal 'reload' chosen for auto global Clear
 
 
-Device-Specific Information:   z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Device-Specific Information:z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 r2_t1_shift_vhdl
 
 ***** Logic for device 'r2_t1_shift_vhdl' compiled without errors.
@@ -70,12 +70,12 @@ Device Options:
 
               R  R                             
               E  E                             
-              S  S                             
-              E  E                             
-              R  R                             
-              V  V     V  G     G     G        
-              E  E     C  N     N     N  Q  Q  
-              D  D  d  C  D  r  D  c  D  1  2  
+              S  S           r                 
+              E  E           e                 
+              R  R           l                 
+              V  V     V  G  o  G     G        
+              E  E     C  N  a  N     N  Q  Q  
+              D  D  d  C  D  d  D  c  D  1  2  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -108,7 +108,7 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:   z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Device-Specific Information:z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 r2_t1_shift_vhdl
 
 ** RESOURCE USAGE **
@@ -126,8 +126,8 @@ Total logic cells used:                          2/32     (  6%)
 Total shareable expanders used:                  0/32     (  0%)
 Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  3.00
-Total fan-in:                                     6
+Average fan-in:                                  2.50
+Total fan-in:                                     5
 
 Total input pins required:                       3
 Total output pins required:                      2
@@ -142,7 +142,7 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:   z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Device-Specific Information:z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 r2_t1_shift_vhdl
 
 ** INPUTS **
@@ -152,7 +152,7 @@ r2_t1_shift_vhdl
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
   43      -   -       INPUT  G            0      0   0    0    0    0    0  c
    4    (1)  (A)      INPUT               0      0   0    0    0    1    0  d
-   1      -   -       INPUT  G            0      0   0    0    0    0    0  r
+   1      -   -       INPUT  G            0      0   0    0    0    0    0  reload
 
 
 Code:
@@ -169,7 +169,7 @@ Sections of this Report File for information on which signals' fan-outs are used
 Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
-Device-Specific Information:   z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Device-Specific Information:z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 r2_t1_shift_vhdl
 
 ** OUTPUTS **
@@ -177,8 +177,8 @@ r2_t1_shift_vhdl
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B         FF   +  t        0      0   0    1    0    1    0  Q1 (:6)
-  40     18    B         FF   +  t        0      0   0    0    1    0    0  Q2 (:7)
+  41     17    B         FF   +  t        0      0   0    1    0    1    0  Q1 (:7)
+  40     18    B         FF   +  t        0      0   0    0    1    0    0  Q2
 
 
 Code:
@@ -190,7 +190,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:   z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Device-Specific Information:z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 r2_t1_shift_vhdl
 
 ** LOGIC CELL INTERCONNECTIONS **
@@ -209,29 +209,29 @@ LC17 -> - * | - * | <-- Q1
 Pin
 43   -> - - | - - | <-- c
 4    -> * - | - * | <-- d
-1    -> - - | - - | <-- r
+1    -> - - | - - | <-- reload
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:   z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Device-Specific Information:z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 r2_t1_shift_vhdl
 
 ** EQUATIONS **
 
 c        : INPUT;
 d        : INPUT;
-r        : INPUT;
+reload   : INPUT;
 
 -- Node name is 'Q1' = 'Q1S' 
 -- Equation name is 'Q1', location is LC017, type is output.
- Q1      = DFFE( d $  GND, GLOBAL( c), GLOBAL( r),  VCC,  VCC);
+ Q1      = DFFE( d $  GND, GLOBAL( c), GLOBAL( reload),  VCC,  VCC);
 
--- Node name is 'Q2' = 'Q2S' 
--- Equation name is 'Q2', location is LC018, type is output.
- Q2      = DFFE( Q1 $  GND, GLOBAL( c), GLOBAL( r),  VCC,  VCC);
+-- Node name is 'Q2' = ':5' 
+-- Equation name is 'Q2', type is output 
+ Q2      = DFFE( Q1 $  GND, GLOBAL( c),  VCC,  VCC,  VCC);
 
 
 
@@ -241,7 +241,7 @@ r        : INPUT;
 
 
 
-Project Information            z:\vhdl-labs\r2_1t1_r_vhdl\r2_t1_shift_vhdl.rpt
+Project Information       z:\vhdl-labs\r2_t1_shift_r_vhdl\r2_t1_shift_vhdl.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -330,4 +330,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,343K
+Peak memory allocated during compilation  = 3,784K

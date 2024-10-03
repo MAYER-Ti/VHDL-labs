@@ -4,28 +4,38 @@ ENTITY r2_t1_shift_vhdl IS
 PORT (
 	d 	 : IN  std_logic;
 	c 	 : IN  std_logic;
-	r 	 : IN  std_logic;
+	reload 	 : IN  std_logic;
 	Q1   : OUT std_logic;
 	Q2   : OUT std_logic
+
 
 );
 END r2_t1_shift_vhdl ;
 ARCHITECTURE behav OF r2_t1_shift_vhdl IS
 	SIGNAL Q1S, Q2S : std_logic := '0';
 BEGIN
-	PROCESS(c,r) 
+	-- Первый dff
+	PROCESS (c, reload) 
 	BEGIN
-		IF (r = '0') THEN
+		IF (reload = '0') THEN
 			Q1S <= '0';
-			Q2S <= '0';
-		ELSIF (c'event AND c = '1') THEN
+		ELSIF (c'event and c = '1') THEN
 			Q1S <= d;
-			Q2S <= Q1S;
+		END IF;
+	END PROCESS;
+
+	-- Второй dff
+	PROCESS (c, reload) 
+	BEGIN
+		IF (reload = '0') THEN
+			Q2S <= '0';
+		ELSIF (c'event and c = '1') THEN
+			Q2 <= Q1S;
+
 		END IF;
 	END PROCESS;
 
 	Q1 <= Q1S;
-	Q2 <= Q2S;
 
 END behav;
 

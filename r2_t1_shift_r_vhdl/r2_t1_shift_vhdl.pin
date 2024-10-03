@@ -28,7 +28,7 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 ----------------------------------------------------------------------------
 
 CHIP "r2_t1_shift_vhdl" ASSIGNED TO AN EPM7032LC44-6
-r                                : 1
+reload                           : 1
 GND                              : 2
 VCC                              : 3
 d                                : 4
