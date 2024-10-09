@@ -1,8 +1,8 @@
-Project Information                           z:\labv5\jk-rstrig\jk-rstrig.rpt
+Project Information                 z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/24/20 00:32:45
+Compiled: 10/24/20 02:52:52
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -43,7 +43,7 @@ User Pins:                 4        2        0
 
 
 
-Device-Specific Information:                  z:\labv5\jk-rstrig\jk-rstrig.rpt
+Device-Specific Information:        z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 jk-rstrig
 
 ***** Logic for device 'jk-rstrig' compiled without errors.
@@ -97,7 +97,7 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:                  z:\labv5\jk-rstrig\jk-rstrig.rpt
+Device-Specific Information:        z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 jk-rstrig
 
 ** RESOURCE USAGE **
@@ -131,7 +131,7 @@ Synthesized logic cells:                         3/  32   (  9%)
 
 
 
-Device-Specific Information:                  z:\labv5\jk-rstrig\jk-rstrig.rpt
+Device-Specific Information:        z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 jk-rstrig
 
 ** INPUTS **
@@ -154,7 +154,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                  z:\labv5\jk-rstrig\jk-rstrig.rpt
+Device-Specific Information:        z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 jk-rstrig
 
 ** OUTPUTS **
@@ -175,7 +175,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                  z:\labv5\jk-rstrig\jk-rstrig.rpt
+Device-Specific Information:        z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 jk-rstrig
 
 ** BURIED LOGIC **
@@ -195,7 +195,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                  z:\labv5\jk-rstrig\jk-rstrig.rpt
+Device-Specific Information:        z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 jk-rstrig
 
 ** LOGIC CELL INTERCONNECTIONS **
@@ -225,7 +225,7 @@ Pin
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:                  z:\labv5\jk-rstrig\jk-rstrig.rpt
+Device-Specific Information:        z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 jk-rstrig
 
 ** EQUATIONS **
@@ -263,7 +263,7 @@ _LC019   = LCELL( _EQ003 $  GND);
 
 
 
-Project Information                           z:\labv5\jk-rstrig\jk-rstrig.rpt
+Project Information                 z:\vhdl-labs\lab-5\jk-rstrig\jk-rstrig.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -352,4 +352,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,642K
+Peak memory allocated during compilation  = 3,734K

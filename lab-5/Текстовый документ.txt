@@ -1,0 +1,35 @@
+IF (s = '1') THEN
+            q_s <= '1';
+            qi_s <= '0';
+        ELSIF (r = '1') THEN
+            q_s <= '0';
+            qi_s <= '1';
+        ELSIF (j = '1' AND k = '0') THEN
+            q_s <= '1';
+            qi_s <= '0';
+        ELSIF (j = '0' AND k = '1') THEN
+            q_s <= '0';
+            qi_s <= '1';
+        ELSIF (j = '1' AND k = '1') THEN
+            q_s <= NOT q_s;
+            qi_s <= NOT qi_s;
+        END IF;
+
+ -- Асинхронная установка и сброс
+        IF (s = '1') THEN
+            q_s <= '1';
+            qi_s <= '0';
+        ELSIF (r = '1') THEN
+            q_s <= '0';
+            qi_s <= '1';
+        -- Логика для обработки по фронту
+        ELSIF (j'event AND j = '1' AND k = '0') THEN
+            q_s <= '1';
+            qi_s <= '0';
+        ELSIF (k'event AND k = '1' AND j = '0') THEN
+            q_s <= '0';
+            qi_s <= '1';
+        ELSIF (j'event AND j = '1' AND k'event AND k = '1') THEN
+            q_s <= NOT q_s;
+            qi_s <= NOT qi_s;
+        END IF;

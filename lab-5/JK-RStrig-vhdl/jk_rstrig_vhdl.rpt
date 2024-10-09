@@ -1,8 +1,8 @@
-Project Information      z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
+Project Information       z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/24/20 01:59:41
+Compiled: 10/24/20 02:56:09
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -29,6 +29,7 @@ needed under any third party's intellectual property, are provided herein.
 ***** Project compilation was successful
 
 
+JK_RSTRIG_VHDL
 
 
 ** DEVICE SUMMARY **
@@ -36,26 +37,17 @@ needed under any third party's intellectual property, are provided herein.
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-dvuhrazrsdvigreg
-      EPM7032LC44-6        3        4        0      4       0           12 %
+jk_rstrig_vhdl
+      EPM7032LC44-6        4        2        0      6       0           18 %
 
-User Pins:                 3        4        0  
+User Pins:                 4        2        0  
 
 
 
-Project Information      z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
+Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
+jk_rstrig_vhdl
 
-** AUTO GLOBAL SIGNALS **
-
-
-
-INFO: Signal 'R' chosen for auto global Clear
-
-
-Device-Specific Information:z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
-dvuhrazrsdvigreg
-
-***** Logic for device 'dvuhrazrsdvigreg' compiled without errors.
+***** Logic for device 'jk_rstrig_vhdl' compiled without errors.
 
 
 
@@ -66,20 +58,20 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-              R                                
-              E                                
-              S                                
-              E                                
-              R                          Q     
-              V        V  G     G  G  G  1     
-              E        C  N     N  N  N  _  Q  
-              D  D  C  C  D  R  D  D  D  1  1  
+                                         R  R  
+                                         E  E  
+                                         S  S  
+                                         E  E  
+                                         R  R  
+                       V  G  G  G  G  G  V  V  
+                       C  N  N  N  N  N  E  E  
+              s  k  j  C  D  D  D  D  D  D  D  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-RESERVED |  7                                39 | Q2_1 
-RESERVED |  8                                38 | Q2 
-RESERVED |  9                                37 | RESERVED 
-     GND | 10                                36 | RESERVED 
+       r |  7                                39 | RESERVED 
+RESERVED |  8                                38 | RESERVED 
+RESERVED |  9                                37 | qi 
+     GND | 10                                36 | q 
 RESERVED | 11                                35 | VCC 
 RESERVED | 12         EPM7032LC44-6          34 | RESERVED 
 RESERVED | 13                                33 | RESERVED 
@@ -106,51 +98,52 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
-dvuhrazrsdvigreg
+Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
+jk_rstrig_vhdl
 
 ** RESOURCE USAGE **
 
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     4/16( 25%)   4/16( 25%)   0/16(  0%)   5/36( 13%) 
+A:     LC1 - LC16     0/16(  0%)   4/16( 25%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     6/16( 37%)   2/16( 12%)   0/16(  0%)   8/36( 22%) 
 
 
-Total dedicated input pins used:                 1/4      ( 25%)
+Total dedicated input pins used:                 0/4      (  0%)
 Total I/O pins used:                             6/32     ( 18%)
-Total logic cells used:                          4/32     ( 12%)
+Total logic cells used:                          6/32     ( 18%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    4/32     ( 12%)
+Total Turbo logic cells used:                    6/32     ( 18%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  3.00
-Total fan-in:                                    12
+Average fan-in:                                  3.16
+Total fan-in:                                    19
 
-Total input pins required:                       3
-Total output pins required:                      4
+Total input pins required:                       4
+Total output pins required:                      2
 Total bidirectional pins required:               0
-Total logic cells required:                      4
-Total flipflops required:                        4
-Total product terms required:                    8
+Total logic cells required:                      6
+Total flipflops required:                        0
+Total product terms required:                   10
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         0/  32   (  0%)
+Synthesized logic cells:                         4/  32   ( 12%)
 
 
 
-Device-Specific Information:z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
-dvuhrazrsdvigreg
+Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
+jk_rstrig_vhdl
 
 ** INPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    4    0  C
-   5    (2)  (A)      INPUT               0      0   0    0    0    1    0  D
-   1      -   -       INPUT  G            0      0   0    0    0    0    0  R
+   4    (1)  (A)      INPUT               0      0   0    0    0    1    2  j
+   5    (2)  (A)      INPUT               0      0   0    0    0    1    2  k
+   7    (4)  (A)      INPUT               0      0   0    0    0    1    2  r
+   6    (3)  (A)      INPUT               0      0   0    0    0    2    2  s
 
 
 Code:
@@ -160,25 +153,18 @@ t = Turbo logic cell
 + = Synchronous flipflop
 ! = NOT gate push-back
 r = Fitter-inserted logic cell
-G = Global Source. Fan-out destinations counted here do not include destinations
-that are driven using global routing resources. Refer to the Auto Global Signals,
-Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
-Sections of this Report File for information on which signals' fan-outs are used as
-Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
-Device-Specific Information:z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
-dvuhrazrsdvigreg
+Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
+jk_rstrig_vhdl
 
 ** OUTPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B         FF      t        0      0   0    2    0    1    0  Q1_1
-  40     18    B         FF      t        0      0   0    1    1    1    0  Q1
-  39     19    B         FF      t        0      0   0    1    1    1    0  Q2_1
-  38     20    B         FF      t        0      0   0    1    1    0    0  Q2
+  36     22    B     OUTPUT      t        0      0   0    4    1    0    0  q
+  37     21    B     OUTPUT      t        0      0   0    1    1    0    0  qi
 
 
 Code:
@@ -190,60 +176,109 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
-dvuhrazrsdvigreg
+Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
+jk_rstrig_vhdl
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (39)    19    B       SOFT    s t        0      0   0    3    1    0    1  ~106~1
+ (40)    18    B      LCELL    s t        0      0   0    1    1    1    1  ~112~1
+ (41)    17    B       SOFT    s t        0      0   0    3    1    1    1  ~127~1
+ (38)    20    B      LCELL    s t        0      0   0    1    1    0    1  ~130~1
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
+jk_rstrig_vhdl
 
 ** LOGIC CELL INTERCONNECTIONS **
 
 Logic Array Block 'B':
 
-                 Logic cells placed in LAB 'B'
-        +------- LC17 Q1_1
-        | +----- LC18 Q1
-        | | +--- LC19 Q2_1
-        | | | +- LC20 Q2
-        | | | | 
-        | | | |   Other LABs fed by signals
-        | | | |   that feed LAB 'B'
-LC      | | | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> - * - - | - * | <-- Q1_1
-LC18 -> - - * - | - * | <-- Q1
-LC19 -> - - - * | - * | <-- Q2_1
+                     Logic cells placed in LAB 'B'
+        +----------- LC22 q
+        | +--------- LC21 qi
+        | | +------- LC19 ~106~1
+        | | | +----- LC18 ~112~1
+        | | | | +--- LC17 ~127~1
+        | | | | | +- LC20 ~130~1
+        | | | | | | 
+        | | | | | |   Other LABs fed by signals
+        | | | | | |   that feed LAB 'B'
+LC      | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC19 -> - - - * - - | - * | <-- ~106~1
+LC18 -> * - * - - - | - * | <-- ~112~1
+LC17 -> - * - - - * | - * | <-- ~127~1
+LC20 -> - - - - * - | - * | <-- ~130~1
 
 Pin
-4    -> * * * * | - * | <-- C
-5    -> * - - - | - * | <-- D
-1    -> - - - - | - - | <-- R
+4    -> * - * - * - | - * | <-- j
+5    -> * - * - * - | - * | <-- k
+7    -> * - * - * - | - * | <-- r
+6    -> * * - * - * | - * | <-- s
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
-dvuhrazrsdvigreg
+Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
+jk_rstrig_vhdl
 
 ** EQUATIONS **
 
-C        : INPUT;
-D        : INPUT;
-R        : INPUT;
+j        : INPUT;
+k        : INPUT;
+r        : INPUT;
+s        : INPUT;
 
--- Node name is 'Q1_1' = ':8' 
--- Equation name is 'Q1_1', type is output 
- Q1_1    = DFFE( D $  GND,  C, GLOBAL( R),  VCC,  VCC);
+-- Node name is 'q' 
+-- Equation name is 'q', location is LC022, type is output.
+ q       = LCELL( _EQ001 $  s);
+  _EQ001 =  j & !_LC018 & !r & !s
+         # !k &  _LC018 & !r & !s;
 
--- Node name is 'Q1' = ':9' 
--- Equation name is 'Q1', type is output 
- Q1      = DFFE( Q1_1 $  GND, !C, GLOBAL( R),  VCC,  VCC);
+-- Node name is 'qi' 
+-- Equation name is 'qi', location is LC021, type is output.
+ qi      = LCELL( _EQ002 $  GND);
+  _EQ002 =  _LC017 & !s;
 
--- Node name is 'Q2_1' = ':10' 
--- Equation name is 'Q2_1', type is output 
- Q2_1    = DFFE( Q1 $  GND,  C, GLOBAL( R),  VCC,  VCC);
+-- Node name is '~106~1' 
+-- Equation name is '~106~1', location is LC019, type is buried.
+-- synthesized logic cell 
+_LC019   = LCELL( _EQ003 $  GND);
+  _EQ003 =  j & !_LC018 & !r
+         # !k &  _LC018 & !r;
 
--- Node name is 'Q2' = ':11' 
--- Equation name is 'Q2', type is output 
- Q2      = DFFE( Q2_1 $  GND, !C, GLOBAL( R),  VCC,  VCC);
+-- Node name is '~112~1' 
+-- Equation name is '~112~1', location is LC018, type is buried.
+-- synthesized logic cell 
+_LC018   = LCELL( _EQ004 $  VCC);
+  _EQ004 = !_LC019 & !s;
+
+-- Node name is '~127~1' 
+-- Equation name is '~127~1', location is LC017, type is buried.
+-- synthesized logic cell 
+_LC017   = LCELL( _EQ005 $  VCC);
+  _EQ005 =  j &  _LC020 & !r
+         # !k & !_LC020 & !r;
+
+-- Node name is '~130~1' 
+-- Equation name is '~130~1', location is LC020, type is buried.
+-- synthesized logic cell 
+_LC020   = LCELL( _EQ006 $  GND);
+  _EQ006 =  _LC017 & !s;
 
 
 
@@ -253,7 +288,7 @@ R        : INPUT;
 
 
 
-Project Information      z:\vhdl-labs\lab-4\2r_1t_shift_r\dvuhrazrsdvigreg.rpt
+Project Information       z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -342,4 +377,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,109K
+Peak memory allocated during compilation  = 3,744K
