@@ -26,9 +26,7 @@ FILES
 {
 	jk-rstrig-vhdl.vhd
 	{
-		jk-rstrig-vhdl [] []
-		{
-		}
+		jk-rstrig-vhdl [] [];
 	}
 	jk_rstrig_vhdl.vhd
 	{

@@ -2,7 +2,7 @@ Project Information       z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/24/20 02:56:09
+Compiled: 10/24/20 23:51:13
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -38,9 +38,9 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 jk_rstrig_vhdl
-      EPM7032LC44-6        4        2        0      6       0           18 %
+      EPM7032LC44-6        4        2        1      3       0           9  %
 
-User Pins:                 4        2        0  
+User Pins:                 4        2        1  
 
 
 
@@ -58,20 +58,20 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-                                         R  R  
-                                         E  E  
-                                         S  S  
-                                         E  E  
-                                         R  R  
-                       V  G  G  G  G  G  V  V  
-                       C  N  N  N  N  N  E  E  
-              s  k  j  C  D  D  D  D  D  D  D  
+                                               
+                                               
+                                         q     
+                                         _     
+                                         t     
+                       V  G  G  G  G  G  e     
+                       C  N  N  N  N  N  m     
+              r  k  j  C  D  D  D  D  D  p  q  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-       r |  7                                39 | RESERVED 
+       s |  7                                39 | qi 
 RESERVED |  8                                38 | RESERVED 
-RESERVED |  9                                37 | qi 
-     GND | 10                                36 | q 
+RESERVED |  9                                37 | RESERVED 
+     GND | 10                                36 | RESERVED 
 RESERVED | 11                                35 | VCC 
 RESERVED | 12         EPM7032LC44-6          34 | RESERVED 
 RESERVED | 13                                33 | RESERVED 
@@ -107,28 +107,28 @@ jk_rstrig_vhdl
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
 A:     LC1 - LC16     0/16(  0%)   4/16( 25%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     6/16( 37%)   2/16( 12%)   0/16(  0%)   8/36( 22%) 
+B:    LC17 - LC32     3/16( 18%)   3/16( 18%)   0/16(  0%)   5/36( 13%) 
 
 
 Total dedicated input pins used:                 0/4      (  0%)
-Total I/O pins used:                             6/32     ( 18%)
-Total logic cells used:                          6/32     ( 18%)
+Total I/O pins used:                             7/32     ( 21%)
+Total logic cells used:                          3/32     (  9%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    6/32     ( 18%)
+Total Turbo logic cells used:                    3/32     (  9%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  3.16
-Total fan-in:                                    19
+Average fan-in:                                  3.00
+Total fan-in:                                     9
 
 Total input pins required:                       4
 Total output pins required:                      2
-Total bidirectional pins required:               0
-Total logic cells required:                      6
+Total bidirectional pins required:               1
+Total logic cells required:                      3
 Total flipflops required:                        0
-Total product terms required:                   10
+Total product terms required:                    6
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         4/  32   ( 12%)
+Synthesized logic cells:                         0/  32   (  0%)
 
 
 
@@ -140,10 +140,11 @@ jk_rstrig_vhdl
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    1    2  j
-   5    (2)  (A)      INPUT               0      0   0    0    0    1    2  k
-   7    (4)  (A)      INPUT               0      0   0    0    0    1    2  r
-   6    (3)  (A)      INPUT               0      0   0    0    0    2    2  s
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  j
+   5    (2)  (A)      INPUT               0      0   0    0    0    2    0  k
+  41     17    B      BIDIR               0      0   0    2    1    3    0  q_temp
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    0  r
+   7    (4)  (A)      INPUT               0      0   0    0    0    1    0  s
 
 
 Code:
@@ -163,31 +164,9 @@ jk_rstrig_vhdl
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  36     22    B     OUTPUT      t        0      0   0    4    1    0    0  q
-  37     21    B     OUTPUT      t        0      0   0    1    1    0    0  qi
-
-
-Code:
-
-s = Synthesized pin or logic cell
-t = Turbo logic cell
-+ = Synchronous flipflop
-! = NOT gate push-back
-r = Fitter-inserted logic cell
-
-
-Device-Specific Information:z:\vhdl-labs\lab-5\jk-rstrig-vhdl\jk_rstrig_vhdl.rpt
-jk_rstrig_vhdl
-
-** BURIED LOGIC **
-
-                                         Shareable
-                                         Expanders     Fan-In    Fan-Out
- Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (39)    19    B       SOFT    s t        0      0   0    3    1    0    1  ~106~1
- (40)    18    B      LCELL    s t        0      0   0    1    1    1    1  ~112~1
- (41)    17    B       SOFT    s t        0      0   0    3    1    1    1  ~127~1
- (38)    20    B      LCELL    s t        0      0   0    1    1    0    1  ~130~1
+  40     18    B     OUTPUT      t        0      0   0    2    1    0    0  q
+  39     19    B     OUTPUT      t        0      0   0    2    1    0    0  qi
+  41     17    B        TRI      t        0      0   0    2    1    3    0  q_temp
 
 
 Code:
@@ -206,27 +185,21 @@ jk_rstrig_vhdl
 
 Logic Array Block 'B':
 
-                     Logic cells placed in LAB 'B'
-        +----------- LC22 q
-        | +--------- LC21 qi
-        | | +------- LC19 ~106~1
-        | | | +----- LC18 ~112~1
-        | | | | +--- LC17 ~127~1
-        | | | | | +- LC20 ~130~1
-        | | | | | | 
-        | | | | | |   Other LABs fed by signals
-        | | | | | |   that feed LAB 'B'
-LC      | | | | | | | A B |     Logic cells that feed LAB 'B':
-LC19 -> - - - * - - | - * | <-- ~106~1
-LC18 -> * - * - - - | - * | <-- ~112~1
-LC17 -> - * - - - * | - * | <-- ~127~1
-LC20 -> - - - - * - | - * | <-- ~130~1
+               Logic cells placed in LAB 'B'
+        +----- LC18 q
+        | +--- LC19 qi
+        | | +- LC17 q_temp
+        | | | 
+        | | |   Other LABs fed by signals
+        | | |   that feed LAB 'B'
+LC      | | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> * * * | - * | <-- q_temp
 
 Pin
-4    -> * - * - * - | - * | <-- j
-5    -> * - * - * - | - * | <-- k
-7    -> * - * - * - | - * | <-- r
-6    -> * * - * - * | - * | <-- s
+4    -> * * - | - * | <-- j
+5    -> * * - | - * | <-- k
+6    -> - - * | - * | <-- r
+7    -> - - * | - * | <-- s
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -244,41 +217,20 @@ r        : INPUT;
 s        : INPUT;
 
 -- Node name is 'q' 
--- Equation name is 'q', location is LC022, type is output.
- q       = LCELL( _EQ001 $  s);
-  _EQ001 =  j & !_LC018 & !r & !s
-         # !k &  _LC018 & !r & !s;
+-- Equation name is 'q', location is LC018, type is output.
+ q       = LCELL( _EQ001 $ !k);
+  _EQ001 = !j & !k & !q_temp;
 
 -- Node name is 'qi' 
--- Equation name is 'qi', location is LC021, type is output.
- qi      = LCELL( _EQ002 $  GND);
-  _EQ002 =  _LC017 & !s;
+-- Equation name is 'qi', location is LC019, type is output.
+ qi      = LCELL( _EQ002 $  k);
+  _EQ002 = !j & !k & !q_temp;
 
--- Node name is '~106~1' 
--- Equation name is '~106~1', location is LC019, type is buried.
--- synthesized logic cell 
-_LC019   = LCELL( _EQ003 $  GND);
-  _EQ003 =  j & !_LC018 & !r
-         # !k &  _LC018 & !r;
-
--- Node name is '~112~1' 
--- Equation name is '~112~1', location is LC018, type is buried.
--- synthesized logic cell 
-_LC018   = LCELL( _EQ004 $  VCC);
-  _EQ004 = !_LC019 & !s;
-
--- Node name is '~127~1' 
--- Equation name is '~127~1', location is LC017, type is buried.
--- synthesized logic cell 
-_LC017   = LCELL( _EQ005 $  VCC);
-  _EQ005 =  j &  _LC020 & !r
-         # !k & !_LC020 & !r;
-
--- Node name is '~130~1' 
--- Equation name is '~130~1', location is LC020, type is buried.
--- synthesized logic cell 
-_LC020   = LCELL( _EQ006 $  GND);
-  _EQ006 =  _LC017 & !s;
+-- Node name is 'q_temp' 
+-- Equation name is 'q_temp', location is LC017, type is bidir.
+q_temp   = TRI(_LC017,  VCC);
+_LC017   = LCELL( _EQ003 $  r);
+  _EQ003 = !q_temp &  r &  s;
 
 
 
@@ -377,4 +329,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,744K
+Peak memory allocated during compilation  = 3,773K

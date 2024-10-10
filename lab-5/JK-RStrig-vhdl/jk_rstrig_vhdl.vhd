@@ -10,31 +10,36 @@ PORT (
 	k : IN std_logic;
 
 	q  : OUT std_logic;
-	qi : OUT std_logic
+	qi : OUT std_logic;
+
+	q_temp : INOUT std_logic
 );
 END jk_rstrig_vhdl;
 
 ARCHITECTURE behav OF jk_rstrig_vhdl IS
-SIGNAL q_s,qi_s:std_logic := '0';
+--SIGNAL q_s:std_logic := '0';
 BEGIN
-	PROCESS(s, j)
+	PROCESS(s, j, r, k)
 	BEGIN
-        IF (s = '1') THEN
-            q_s <= '1';
-            qi_s <= '0';
-        ELSIF (r = '1') THEN
-            q_s <= '0';
-            qi_s <= '1';
-        ELSIF (j'event AND j = '1' AND k = '0') THEN
-            q_s <= '1';
-            qi_s <= '0';
-        ELSIF (k'event AND k = '1' AND j = '0') THEN
-            q_s <= '0';
-            qi_s <= '1';
-        ELSIF (j'event AND j = '1' AND k'event AND k = '1') THEN
-            q_s <= NOT q_s;
-            qi_s <= NOT qi_s;
-        END IF;	END PROCESS;
-q <= q_s;
-qi <= qi_s;
+			IF(r = '0') THEN
+				q_temp <= '0';
+			ELSIF(s = '0') THEN
+				q_temp <= '1';
+			ELSE
+				q_temp <= q_temp;
+			END IF;
+--	END PROCESS;
+--	PROCESS(k, j)
+--	BEGIN
+			IF(k = '1') THEN
+				q <= '0';
+				qi <= '1';
+			ELSIF(j = '1') THEN
+				q <= '1';
+				qi <= '0';				
+			ELSE
+				q <= q_temp;
+				qi <= NOT q_temp;
+			END IF;
+    END PROCESS;
 END behav;
