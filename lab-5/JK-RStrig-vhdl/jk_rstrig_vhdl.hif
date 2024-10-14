@@ -30,7 +30,7 @@ FILES
 	}
 	jk_rstrig_vhdl.vhd
 	{
-		jk_rstrig_vhdl [] [U7449008.DLS,U1147235.DLS]
+		jk_rstrig_vhdl [] [U1147235.DLS,U7449008.DLS]
 		{
 			0 [] [];
 		}
