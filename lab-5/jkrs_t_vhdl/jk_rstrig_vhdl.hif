@@ -24,9 +24,13 @@ HIF003
 --
 FILES
 {
-	r4_counter.vhd
+	jk-rstrig-vhdl.vhd
 	{
-		r4_counter [] [U1147235.DLS,U7449008.DLS]
+		jk-rstrig-vhdl [] [];
+	}
+	jk_rstrig_vhdl.vhd
+	{
+		jk_rstrig_vhdl [] [U1147235.DLS,U7449008.DLS]
 		{
 			0 [] [];
 		}
@@ -34,5 +38,5 @@ FILES
 }
 TREE
 {
-	r4_counter::(0,0):(0): r4_counter.vhd;
+	jk_rstrig_vhdl::(0,0):(0): jk_rstrig_vhdl.vhd;
 }
