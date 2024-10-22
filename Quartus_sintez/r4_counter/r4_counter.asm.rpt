@@ -1,5 +1,5 @@
 Assembler report for r4_counter
-Sat Oct 31 01:44:25 2020
+Thu Nov 05 21:38:09 2020
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Oct 31 01:44:25 2020 ;
+; Assembler Status      ; Successful - Thu Nov 05 21:38:09 2020 ;
 ; Revision Name         ; r4_counter                            ;
 ; Top-level Entity Name ; r4_counter                            ;
 ; Family                ; Stratix                               ;
@@ -116,10 +116,10 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 5.0 Build 148 04/26/2005 SJ Full Version
-    Info: Processing started: Sat Oct 31 01:44:20 2020
+    Info: Processing started: Thu Nov 05 21:38:06 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off r4_counter -c r4_counter
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Processing ended: Sat Oct 31 01:44:25 2020
-    Info: Elapsed time: 00:00:06
+    Info: Processing ended: Thu Nov 05 21:38:09 2020
+    Info: Elapsed time: 00:00:03
 
 

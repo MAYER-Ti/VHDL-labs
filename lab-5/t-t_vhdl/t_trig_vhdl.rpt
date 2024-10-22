@@ -2,7 +2,7 @@ Project Information                z:\vhdl-labs\lab-5\t-t_vhdl\t_trig_vhdl.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/31/20 01:28:41
+Compiled: 11/05/20 21:21:09
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -324,4 +324,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,116K
+Peak memory allocated during compilation  = 3,608K

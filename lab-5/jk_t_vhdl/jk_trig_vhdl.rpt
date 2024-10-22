@@ -2,7 +2,7 @@ Project Information              z:\vhdl-labs\lab-5\jk_t_vhdl\jk_trig_vhdl.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/31/20 01:18:41
+Compiled: 11/05/20 21:21:58
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -38,10 +38,19 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 jk_trig_vhdl
-      EPM7032LC44-6        2        1        0      2       1           6  %
+      EPM7032LC44-6        3        2        0      2       0           6  %
 
-User Pins:                 2        1        0  
+User Pins:                 3        2        0  
 
+
+
+Project Information              z:\vhdl-labs\lab-5\jk_t_vhdl\jk_trig_vhdl.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clk' chosen for auto global Clock
 
 
 Device-Specific Information:     z:\vhdl-labs\lab-5\jk_t_vhdl\jk_trig_vhdl.rpt
@@ -58,14 +67,14 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-              R                             R  
-              E                             E  
-              S                             S  
-              E                             E  
-              R                             R  
-              V        V  G  G  G  G  G     V  
-              E        C  N  N  N  N  N     E  
-              D  k  j  C  D  D  D  D  D  q  D  
+              R                                
+              E                                
+              S                                
+              E                                
+              R                                
+              V        V  G  G  G  c  G        
+              E        C  N  N  N  l  N     q  
+              D  k  j  C  D  D  D  k  D  q  i  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -107,28 +116,28 @@ jk_trig_vhdl
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
 A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     2/16( 12%)   1/16(  6%)   1/16(  6%)   3/36(  8%) 
+B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   3/36(  8%) 
 
 
-Total dedicated input pins used:                 0/4      (  0%)
-Total I/O pins used:                             3/32     (  9%)
+Total dedicated input pins used:                 1/4      ( 25%)
+Total I/O pins used:                             4/32     ( 12%)
 Total logic cells used:                          2/32     (  6%)
-Total shareable expanders used:                  1/32     (  3%)
+Total shareable expanders used:                  0/32     (  0%)
 Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  3.00
-Total fan-in:                                     6
+Average fan-in:                                  4.00
+Total fan-in:                                     8
 
-Total input pins required:                       2
-Total output pins required:                      1
+Total input pins required:                       3
+Total output pins required:                      2
 Total bidirectional pins required:               0
 Total logic cells required:                      2
-Total flipflops required:                        0
+Total flipflops required:                        2
 Total product terms required:                    4
 Total logic cells lending parallel expanders:    0
-Total shareable expanders in database:           1
+Total shareable expanders in database:           0
 
-Synthesized logic cells:                         1/  32   (  3%)
+Synthesized logic cells:                         0/  32   (  0%)
 
 
 
@@ -140,8 +149,9 @@ jk_trig_vhdl
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    1    1  j
-   5    (2)  (A)      INPUT               0      0   0    0    0    1    1  k
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  j
+   5    (2)  (A)      INPUT               0      0   0    0    0    2    0  k
 
 
 Code:
@@ -151,6 +161,11 @@ t = Turbo logic cell
 + = Synchronous flipflop
 ! = NOT gate push-back
 r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
 Device-Specific Information:     z:\vhdl-labs\lab-5\jk_t_vhdl\jk_trig_vhdl.rpt
@@ -161,27 +176,8 @@ jk_trig_vhdl
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B     OUTPUT      t        0      0   0    2    1    0    0  q
-
-
-Code:
-
-s = Synthesized pin or logic cell
-t = Turbo logic cell
-+ = Synchronous flipflop
-! = NOT gate push-back
-r = Fitter-inserted logic cell
-
-
-Device-Specific Information:     z:\vhdl-labs\lab-5\jk_t_vhdl\jk_trig_vhdl.rpt
-jk_trig_vhdl
-
-** BURIED LOGIC **
-
-                                         Shareable
-                                         Expanders     Fan-In    Fan-Out
- Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (40)    18    B      LCELL    s t        1      0   0    2    1    1    1  ~37~1
+  41     17    B         FF   +  t        0      0   0    2    1    2    0  q (:6)
+  40     18    B         FF   +  t !      0      0   0    2    1    0    0  qi (~6~1)
 
 
 Code:
@@ -202,14 +198,15 @@ Logic Array Block 'B':
 
              Logic cells placed in LAB 'B'
         +--- LC17 q
-        | +- LC18 ~37~1
+        | +- LC18 qi
         | | 
         | |   Other LABs fed by signals
         | |   that feed LAB 'B'
 LC      | | | A B |     Logic cells that feed LAB 'B':
-LC18 -> * * | - * | <-- ~37~1
+LC17 -> * * | - * | <-- q
 
 Pin
+43   -> - - | - - | <-- clk
 4    -> * * | - * | <-- j
 5    -> * * | - * | <-- k
 
@@ -223,20 +220,22 @@ jk_trig_vhdl
 
 ** EQUATIONS **
 
+clk      : INPUT;
 j        : INPUT;
 k        : INPUT;
 
--- Node name is 'q' 
+-- Node name is 'q' = 'q_s' 
 -- Equation name is 'q', location is LC017, type is output.
- q       = LCELL( _EQ001 $  j);
-  _EQ001 = !j & !k &  _LC018;
+ q       = DFFE( _EQ001 $  VCC, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ001 =  k &  q
+         # !j & !q;
 
--- Node name is '~37~1' 
--- Equation name is '~37~1', location is LC018, type is buried.
--- synthesized logic cell 
-_LC018   = LCELL( _EQ002 $  VCC);
-  _EQ002 = !j &  _X001;
-  _X001  = EXP(!k &  _LC018);
+-- Node name is 'qi' = 'q_s~1' 
+-- Equation name is 'qi', location is LC018, type is output.
+qi       = _LC018~NOT;
+_LC018~NOT = DFFE( _EQ002 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ002 =  k &  q
+         # !j & !q;
 
 
 
@@ -324,15 +323,15 @@ Compilation Times
    Compiler Netlist Extractor             00:00:00
    Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
-   Partitioner                            00:00:00
+   Partitioner                            00:00:01
    Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:00
+   Total Time                             00:00:01
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,058K
+Peak memory allocated during compilation  = 3,396K
