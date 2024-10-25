@@ -24,15 +24,11 @@ HIF003
 --
 FILES
 {
-	jk_trig_vhdl.vhd
-	{
-		jk_trig_vhdl [] [U1147235.DLS,U7449008.DLS]
-		{
-			0 [] [];
-		}
-	}
 }
 TREE
 {
-	jk_trig_vhdl::(0,0):(0): jk_trig_vhdl.vhd;
+	elem_74138::(0,0):(0): elem_74138.gdf
+	{
+		74138::(0,0):(1): 74138.gdf;
+	}
 }
