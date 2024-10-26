@@ -24,9 +24,15 @@ HIF003
 --
 FILES
 {
-	jk_trig_vhdl.vhd
+	de_shifr.gdf
 	{
-		jk_trig_vhdl [] [U7449008.DLS,U1147235.DLS]
+		de_shifr [] []
+		{
+		}
+	}
+	dc_3in_8out.gdf
+	{
+		dc_3in_8out [] []
 		{
 			0 [] [];
 		}
@@ -34,5 +40,5 @@ FILES
 }
 TREE
 {
-	jk_trig_vhdl::(0,0):(0): jk_trig_vhdl.vhd;
+	dc_3in_8out::(0,0):(0): dc_3in_8out.gdf;
 }
