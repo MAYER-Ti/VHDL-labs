@@ -24,15 +24,8 @@ HIF003
 --
 FILES
 {
-	dc_3in_8out.vhd
-	{
-		dc_3in_8out [] [U1147235.DLS,U7449008.DLS]
-		{
-			0 [] [];
-		}
-	}
 }
 TREE
 {
-	dc_3in_8out::(0,0):(0): dc_3in_8out.vhd;
+	dc_8in_64out::(0,0):(0): dc_8in_64out.gdf;
 }

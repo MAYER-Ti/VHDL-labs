@@ -26,9 +26,7 @@ FILES
 {
 	de_shifr.gdf
 	{
-		de_shifr [] []
-		{
-		}
+		de_shifr [] [];
 	}
 	dc_3in_8out.gdf
 	{

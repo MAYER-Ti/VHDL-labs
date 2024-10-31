@@ -43,8 +43,8 @@ TREE
 {
 	dc_4in_16out::(0,0):(0): dc_4in_16out.gdf
 	{
-		dc_3in_8out::(0,0):(4): dc_3in_8out.gdf;
-		dc_3in_8out::(0,0):(3): dc_3in_8out.gdf;
-		dc_3in_8out::(0,0):(1): dc_3in_8out.gdf;
+		dc_3in_8out::(0,0):(54): dc_3in_8out.gdf;
+		dc_3in_8out::(0,0):(55): dc_3in_8out.gdf;
+		dc_3in_8out::(0,0):(56): dc_3in_8out.gdf;
 	}
 }
