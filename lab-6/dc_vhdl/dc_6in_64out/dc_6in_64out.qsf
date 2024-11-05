@@ -29,6 +29,8 @@ set_global_assignment -name ORIGINAL_QUARTUS_VERSION 5.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:54:07  NOVEMBER 15, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION 5.0
 set_global_assignment -name VHDL_FILE dc_6in_64out.vhd
+set_global_assignment -name VHDL_FILE dc_3in_8out.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE dc_6in_64out.vwf
 
 # Analysis & Synthesis Assignments
 # ================================
