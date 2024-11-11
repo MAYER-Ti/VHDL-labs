@@ -24,6 +24,13 @@ HIF003
 --
 FILES
 {
+	hpri_8in_3out.gdf
+	{
+		hpri_8in_3out [] []
+		{
+			0 [] [];
+		}
+	}
 }
 TREE
 {

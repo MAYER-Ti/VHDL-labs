@@ -1,8 +1,8 @@
-Project Information                      z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
+Project Information                       z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 11/26/20 03:14:29
+Compiled: 11/26/20 03:14:58
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -36,17 +36,17 @@ needed under any third party's intellectual property, are provided herein.
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-dc_3in_8out
-      EPM7032LC44-6        4        8        0      8       0           25 %
+hpri_8in_3out
+      EPM7032LC44-6        9        5        0      5       0           15 %
 
-User Pins:                 4        8        0  
+User Pins:                 9        5        0  
 
 
 
-Device-Specific Information:             z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
-dc_3in_8out
+Device-Specific Information:              z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
+hpri_8in_3out
 
-***** Logic for device 'dc_3in_8out' compiled without errors.
+***** Logic for device 'hpri_8in_3out' compiled without errors.
 
 
 
@@ -63,17 +63,17 @@ Device Options:
                                                
                                                
                        V  G  G  G  G  G        
-              a  a  a  C  N  N  N  N  N  q  q  
-              2  1  0  C  D  D  D  D  D  5  6  
+              r  r  r  C  N  N  N  N  N     E  
+              5  6  7  C  D  D  D  D  D  G  O  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-      en |  7                                39 | q2 
-RESERVED |  8                                38 | q1 
-RESERVED |  9                                37 | q7 
-     GND | 10                                36 | q0 
-RESERVED | 11                                35 | VCC 
-RESERVED | 12         EPM7032LC44-6          34 | q4 
-RESERVED | 13                                33 | q3 
+      r4 |  7                                39 | a2 
+      r3 |  8                                38 | a1 
+      r2 |  9                                37 | a0 
+     GND | 10                                36 | RESERVED 
+      EI | 11                                35 | VCC 
+      r1 | 12         EPM7032LC44-6          34 | RESERVED 
+      r0 | 13                                33 | RESERVED 
 RESERVED | 14                                32 | RESERVED 
      VCC | 15                                31 | RESERVED 
 RESERVED | 16                                30 | GND 
@@ -97,33 +97,33 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:             z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
-dc_3in_8out
+Device-Specific Information:              z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
+hpri_8in_3out
 
 ** RESOURCE USAGE **
 
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   4/16( 25%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     8/16( 50%)   8/16( 50%)   0/16(  0%)   4/36( 11%) 
+A:     LC1 - LC16     0/16(  0%)   9/16( 56%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     5/16( 31%)   5/16( 31%)   0/16(  0%)   9/36( 25%) 
 
 
 Total dedicated input pins used:                 0/4      (  0%)
-Total I/O pins used:                            12/32     ( 37%)
-Total logic cells used:                          8/32     ( 25%)
+Total I/O pins used:                            14/32     ( 43%)
+Total logic cells used:                          5/32     ( 15%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    8/32     ( 25%)
+Total Turbo logic cells used:                    5/32     ( 15%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  4.00
-Total fan-in:                                    32
+Average fan-in:                                  7.20
+Total fan-in:                                    36
 
-Total input pins required:                       4
-Total output pins required:                      8
+Total input pins required:                       9
+Total output pins required:                      5
 Total bidirectional pins required:               0
-Total logic cells required:                      8
+Total logic cells required:                      5
 Total flipflops required:                        0
-Total product terms required:                    8
+Total product terms required:                   12
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -131,18 +131,23 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:             z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
-dc_3in_8out
+Device-Specific Information:              z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
+hpri_8in_3out
 
 ** INPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    8    0  a0
-   5    (2)  (A)      INPUT               0      0   0    0    0    8    0  a1
-   6    (3)  (A)      INPUT               0      0   0    0    0    8    0  a2
-   7    (4)  (A)      INPUT               0      0   0    0    0    8    0  en
+  11    (7)  (A)      INPUT               0      0   0    0    0    5    0  EI
+  13    (9)  (A)      INPUT               0      0   0    0    0    2    0  r0
+  12    (8)  (A)      INPUT               0      0   0    0    0    2    0  r1
+   9    (6)  (A)      INPUT               0      0   0    0    0    4    0  r2
+   8    (5)  (A)      INPUT               0      0   0    0    0    3    0  r3
+   7    (4)  (A)      INPUT               0      0   0    0    0    5    0  r4
+   6    (3)  (A)      INPUT               0      0   0    0    0    5    0  r5
+   5    (2)  (A)      INPUT               0      0   0    0    0    5    0  r6
+   4    (1)  (A)      INPUT               0      0   0    0    0    5    0  r7
 
 
 Code:
@@ -154,22 +159,19 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:             z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
-dc_3in_8out
+Device-Specific Information:              z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
+hpri_8in_3out
 
 ** OUTPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  36     22    B     OUTPUT      t        0      0   0    4    0    0    0  q0
-  38     20    B     OUTPUT      t        0      0   0    4    0    0    0  q1
-  39     19    B     OUTPUT      t        0      0   0    4    0    0    0  q2
-  33     24    B     OUTPUT      t        0      0   0    4    0    0    0  q3
-  34     23    B     OUTPUT      t        0      0   0    4    0    0    0  q4
-  41     17    B     OUTPUT      t        0      0   0    4    0    0    0  q5
-  40     18    B     OUTPUT      t        0      0   0    4    0    0    0  q6
-  37     21    B     OUTPUT      t        0      0   0    4    0    0    0  q7
+  37     21    B     OUTPUT      t        0      0   0    6    0    0    0  a0
+  38     20    B     OUTPUT      t        0      0   0    7    0    0    0  a1
+  39     19    B     OUTPUT      t        0      0   0    5    0    0    0  a2
+  40     18    B     OUTPUT      t        0      0   0    9    0    0    0  EO
+  41     17    B     OUTPUT      t        0      0   0    9    0    0    0  G
 
 
 Code:
@@ -181,87 +183,83 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:             z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
-dc_3in_8out
+Device-Specific Information:              z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
+hpri_8in_3out
 
 ** LOGIC CELL INTERCONNECTIONS **
 
 Logic Array Block 'B':
 
-                         Logic cells placed in LAB 'B'
-        +--------------- LC22 q0
-        | +------------- LC20 q1
-        | | +----------- LC19 q2
-        | | | +--------- LC24 q3
-        | | | | +------- LC23 q4
-        | | | | | +----- LC17 q5
-        | | | | | | +--- LC18 q6
-        | | | | | | | +- LC21 q7
-        | | | | | | | | 
-        | | | | | | | |   Other LABs fed by signals
-        | | | | | | | |   that feed LAB 'B'
-LC      | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+                   Logic cells placed in LAB 'B'
+        +--------- LC21 a0
+        | +------- LC20 a1
+        | | +----- LC19 a2
+        | | | +--- LC18 EO
+        | | | | +- LC17 G
+        | | | | | 
+        | | | | |   Other LABs fed by signals
+        | | | | |   that feed LAB 'B'
+LC      | | | | | | A B |     Logic cells that feed LAB 'B':
 
 Pin
-4    -> * * * * * * * * | - * | <-- a0
-5    -> * * * * * * * * | - * | <-- a1
-6    -> * * * * * * * * | - * | <-- a2
-7    -> * * * * * * * * | - * | <-- en
+11   -> * * * * * | - * | <-- EI
+13   -> - - - * * | - * | <-- r0
+12   -> - - - * * | - * | <-- r1
+9    -> * * - * * | - * | <-- r2
+8    -> - * - * * | - * | <-- r3
+7    -> * * * * * | - * | <-- r4
+6    -> * * * * * | - * | <-- r5
+5    -> * * * * * | - * | <-- r6
+4    -> * * * * * | - * | <-- r7
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:             z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
-dc_3in_8out
+Device-Specific Information:              z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
+hpri_8in_3out
 
 ** EQUATIONS **
 
-a0       : INPUT;
-a1       : INPUT;
-a2       : INPUT;
-en       : INPUT;
+EI       : INPUT;
+r0       : INPUT;
+r1       : INPUT;
+r2       : INPUT;
+r3       : INPUT;
+r4       : INPUT;
+r5       : INPUT;
+r6       : INPUT;
+r7       : INPUT;
 
--- Node name is 'q0' 
--- Equation name is 'q0', location is LC022, type is output.
- q0      = LCELL( _EQ001 $  VCC);
-  _EQ001 = !a0 & !a1 & !a2 &  en;
+-- Node name is 'a0' 
+-- Equation name is 'a0', location is LC021, type is output.
+ a0      = LCELL( _EQ001 $  GND);
+  _EQ001 =  EI & !r2 & !r4 & !r6
+         #  EI &  r5 & !r6
+         #  EI &  r7;
 
--- Node name is 'q1' 
--- Equation name is 'q1', location is LC020, type is output.
- q1      = LCELL( _EQ002 $  VCC);
-  _EQ002 =  a0 & !a1 & !a2 &  en;
+-- Node name is 'a1' 
+-- Equation name is 'a1', location is LC020, type is output.
+ a1      = LCELL( _EQ002 $  EI);
+  _EQ002 =  EI & !r2 & !r3 &  r6 & !r7
+         #  EI &  r5 &  r6 & !r7
+         #  EI &  r4 &  r6 & !r7;
 
--- Node name is 'q2' 
--- Equation name is 'q2', location is LC019, type is output.
- q2      = LCELL( _EQ003 $  VCC);
-  _EQ003 = !a0 &  a1 & !a2 &  en;
+-- Node name is 'a2' 
+-- Equation name is 'a2', location is LC019, type is output.
+ a2      = LCELL( _EQ003 $  EI);
+  _EQ003 =  EI &  r4 &  r5 &  r6 & !r7;
 
--- Node name is 'q3' 
--- Equation name is 'q3', location is LC024, type is output.
- q3      = LCELL( _EQ004 $  VCC);
-  _EQ004 =  a0 &  a1 & !a2 &  en;
+-- Node name is 'EO' 
+-- Equation name is 'EO', location is LC018, type is output.
+ EO      = LCELL( _EQ004 $  GND);
+  _EQ004 =  EI & !r0 & !r1 & !r2 & !r3 & !r4 & !r5 & !r6 & !r7;
 
--- Node name is 'q4' 
--- Equation name is 'q4', location is LC023, type is output.
- q4      = LCELL( _EQ005 $  VCC);
-  _EQ005 = !a0 & !a1 &  a2 &  en;
-
--- Node name is 'q5' 
--- Equation name is 'q5', location is LC017, type is output.
- q5      = LCELL( _EQ006 $  VCC);
-  _EQ006 =  a0 & !a1 &  a2 &  en;
-
--- Node name is 'q6' 
--- Equation name is 'q6', location is LC018, type is output.
- q6      = LCELL( _EQ007 $  VCC);
-  _EQ007 = !a0 &  a1 &  a2 &  en;
-
--- Node name is 'q7' 
--- Equation name is 'q7', location is LC021, type is output.
- q7      = LCELL( _EQ008 $  VCC);
-  _EQ008 =  a0 &  a1 &  a2 &  en;
+-- Node name is 'G' 
+-- Equation name is 'G', location is LC017, type is output.
+ G       = LCELL( _EQ005 $  EI);
+  _EQ005 =  EI & !r0 & !r1 & !r2 & !r3 & !r4 & !r5 & !r6 & !r7;
 
 
 
@@ -271,7 +269,7 @@ en       : INPUT;
 
 
 
-Project Information                      z:\vhdl-labs\lab-6\dc\dc_3in_8out.rpt
+Project Information                       z:\vhdl-labs\lab-7\hpri_8in_3out.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -360,4 +358,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,585K
+Peak memory allocated during compilation  = 2,624K
