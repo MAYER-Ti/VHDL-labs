@@ -52,13 +52,13 @@ TREE
 	{
 		hpri_16in_4out::(0,0):(2): hpri_16in_4out.gdf
 		{
-			hpri_8in_3out:2:(0,0):(2): hpri_8in_3out.gdf;
 			hpri_8in_3out:2:(0,0):(1): hpri_8in_3out.gdf;
+			hpri_8in_3out:2:(0,0):(2): hpri_8in_3out.gdf;
 		}
 		hpri_16in_4out::(0,0):(1): hpri_16in_4out.gdf
 		{
-			hpri_8in_3out:2:(0,0):(2): hpri_8in_3out.gdf;
 			hpri_8in_3out:2:(0,0):(1): hpri_8in_3out.gdf;
+			hpri_8in_3out:2:(0,0):(2): hpri_8in_3out.gdf;
 		}
 	}
 }

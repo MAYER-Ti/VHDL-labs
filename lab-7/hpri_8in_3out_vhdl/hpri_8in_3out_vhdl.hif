@@ -26,7 +26,7 @@ FILES
 {
 	hpri_8in_3out_vhdl.vhd
 	{
-		hpri_8in_3out_vhdl [] [U7449008.DLS,U1147235.DLS]
+		hpri_8in_3out_vhdl [] [U1147235.DLS,U7449008.DLS]
 		{
 			0 [] [];
 		}
