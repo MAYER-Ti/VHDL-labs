@@ -24,9 +24,23 @@ HIF003
 --
 FILES
 {
-	hpri_8in_3out_vhdl.vhd
+	hpri_8in_3out.gdf
 	{
-		hpri_8in_3out_vhdl [] [U7449008.DLS,U1147235.DLS]
+		hpri_8in_3out [] []
+		{
+			2 [] [];
+		}
+	}
+	hpri_16in_4out.gdf
+	{
+		hpri_16in_4out [] []
+		{
+			1 [] [];
+		}
+	}
+	hpri_32in_5out.gdf
+	{
+		hpri_32in_5out [] []
 		{
 			0 [] [];
 		}
@@ -34,5 +48,17 @@ FILES
 }
 TREE
 {
-	hpri_8in_3out_vhdl::(0,0):(0): hpri_8in_3out_vhdl.vhd;
+	hpri_32in_5out::(0,0):(0): hpri_32in_5out.gdf
+	{
+		hpri_16in_4out::(0,0):(2): hpri_16in_4out.gdf
+		{
+			hpri_8in_3out:2:(0,0):(2): hpri_8in_3out.gdf;
+			hpri_8in_3out:2:(0,0):(1): hpri_8in_3out.gdf;
+		}
+		hpri_16in_4out::(0,0):(1): hpri_16in_4out.gdf
+		{
+			hpri_8in_3out:2:(0,0):(2): hpri_8in_3out.gdf;
+			hpri_8in_3out:2:(0,0):(1): hpri_8in_3out.gdf;
+		}
+	}
 }
