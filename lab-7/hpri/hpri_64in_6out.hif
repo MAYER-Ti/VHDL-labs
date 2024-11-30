@@ -24,11 +24,11 @@ HIF003
 --
 FILES
 {
-	hpri_8in_3out.gdf
+	hpri_16in_4out.gdf
 	{
-		hpri_8in_3out [] []
+		hpri_16in_4out [] []
 		{
-			3 [] [];
+			2 [] [];
 		}
 	}
 	hpri_32in_5out.gdf
@@ -38,11 +38,11 @@ FILES
 			1 [] [];
 		}
 	}
-	hpri_16in_4out.gdf
+	hpri_8in_3out.gdf
 	{
-		hpri_16in_4out [] []
+		hpri_8in_3out [] []
 		{
-			2 [] [];
+			3 [] [];
 		}
 	}
 	hpri_64in_6out.gdf
@@ -57,7 +57,7 @@ TREE
 {
 	hpri_64in_6out::(0,0):(0): hpri_64in_6out.gdf
 	{
-		hpri_32in_5out::(0,0):(80): hpri_32in_5out.gdf
+		hpri_32in_5out::(0,0):(82): hpri_32in_5out.gdf
 		{
 			hpri_16in_4out:2:(0,0):(2): hpri_16in_4out.gdf
 			{
@@ -70,7 +70,7 @@ TREE
 				hpri_8in_3out:3:(0,0):(1): hpri_8in_3out.gdf;
 			}
 		}
-		hpri_32in_5out::(0,0):(82): hpri_32in_5out.gdf
+		hpri_32in_5out::(0,0):(80): hpri_32in_5out.gdf
 		{
 			hpri_16in_4out:2:(0,0):(2): hpri_16in_4out.gdf
 			{
